@@ -80,3 +80,84 @@ style button: button {
 button:hover {
     background-color: red;
 }
+
+/*responsive layout
+phone screen layout*/
+@media screen and (max-width: 480px) {
+
+    #field {
+        width: 310px;
+        height: 310px;
+    }
+
+    button {
+        padding: 20px;
+        margin: 0 29px;
+    }
+
+    .card {
+        margin: 2px;
+    }
+}
+
+/*tablet screen layout*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    #field {
+        width: 475px;
+        height: 475px;
+    }
+
+    table {
+        margin: 0 -85px;
+    }
+
+    button {
+        padding: 20px;
+        margin: 0 113px;
+    }
+}
+
+/*laptop screen layout*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #field {
+        width: 730px;
+        height: 730px;
+    }
+
+    table {
+        margin: 0 -85px;
+    }
+
+    button {
+        padding: 20px;
+        margin: 0 240px;
+    }
+}
+
+/*desktop screen layout*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    table {
+        margin: 0 -88px;
+    }
+
+    button {
+        padding: 20px;
+        margin: 0 277px;
+    }
+}
+
+/*tv screen layout*/
+@media screen and (min-width: 1201px) {
+
+    table {
+        margin: 0 -88px;
+    }
+
+    button {
+        padding: 20px;
+        margin: 0 276px;
+    }
+}
