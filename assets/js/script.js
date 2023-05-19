@@ -141,7 +141,7 @@ function stopCountdown() {
 //update the timer:
 function updateTimer() {
     let timerElement = document.getElementById("timer");
-    timerElement.innerText = seconds;
+    timerElement.innerText = seconds + ' s';
 }
 
 //toggle start/reset:
@@ -152,8 +152,11 @@ function toggleStartReset() {
         currentFunction = resetGame;
         //switch to start
     } else {
-        resetGame();
-        currentFunction = startGame;
+        const reset = confirm('Are you sure you want to reset the game?');
+        if (reset === true) {
+            resetGame();
+            currentFunction = startGame;
+        }
     }
 }
 
