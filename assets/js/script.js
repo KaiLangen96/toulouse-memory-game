@@ -5,6 +5,12 @@ let noFlip = true;
 let firstCard, secondCard;
 //for timer:
 let seconds, countdown, isRunning = false;
+//for score and moves:
+const counterPoints = document.getElementById("points");
+const counterMoves = document.getElementById("moves");
+let points, moves;
+//io-button:
+let currentFunction = startGame;
 
 //start the game:
 function startGame() {
@@ -149,4 +155,23 @@ function stopCountdown() {
 function updateTimer() {
     let timerElement = document.getElementById("timer");
     timerElement.innerText = seconds;
+}
+
+//toggle start/reset:
+function toggleStartReset() {
+    //switch to reset
+    if (currentFunction === startGame) {
+        startGame();
+        currentFunction = resetGame;
+        //switch to start
+    } else {
+        resetGame();
+        currentFunction = startGame;
+    }
+}
+
+//update the io button text:
+function updateActionButtonText(text) {
+    let iobutton = document.getElementById("iobutton");
+    iobutton.innerText = text;
 }
