@@ -4,7 +4,7 @@ This is a website with a memory game themed by one of my cats, Toulouse. I hope 
 
 You can find her new website [here](https://kailangen96.github.io/toulouse-memory-game/).
 
-![Mock up of her website on different screens]()
+![Mock up of her website on different screens](https://cdn.discordapp.com/attachments/1049024982694498367/1109178879056298135/image.png)
 
 # User Experience (UX)
 
@@ -47,18 +47,16 @@ The wireframe shows designs for phone, iPad/tablet and desktop displays.
   * below and to 480px: Mobile devices.
   * 481px — 768px: iPads, Tablets.
   * 769px — 1024px: Small screens, laptops.
-  * 1025px — 1200px: Desktops, large screens.
-  * 1201px and more — Extra large screens, TV.
+  * and above.
 
 * The game field is locked until the start button is pressed.
 * The scoreboard keeps track of the players score, time remaining and moves.
   * The score updates as soon as a pair is flipped.
   * The time counts down 60 seconds.
-  * the moves update every time two cards are flipped.
+  * The moves update every time two cards are flipped.
 
 ## Upcoming Features
 
-* The board currently doesn't shuffle on reset. This needs to be fixed soon!
 * Add the possibility of starting the game by clicking a card.
 * Add different difficulties.
 
@@ -83,21 +81,21 @@ The wireframe shows designs for phone, iPad/tablet and desktop displays.
 
 ## Validating
 
-Every day after finishing up I used the [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validators to make sure I did not create errors.
+After finishing up I used the [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validators to make sure I did not create errors.
 
 ### Latest validations
 
 #### HTML
 
-![Image of the latest HTML validation]()
+![Image of the latest HTML validation](https://cdn.discordapp.com/attachments/1049024982694498367/1109179731892506664/image.png)
 
-latest test ~
+latest test ~20:00 19.05.2023
 
 #### CSS
 
-![Image of the latest CSS validation]()
+![Image of the latest CSS validation](https://cdn.discordapp.com/attachments/1049024982694498367/1109178660281385100/image.png)
 
-latest test ~
+latest test ~20:00 19.05.2023
 
 ## Testing User Stories from (UX) Section
 
@@ -151,9 +149,9 @@ As one of the most useful ways to test my website, I send it out to many friends
 
 After deploying my website, I used Lighthouse as a tool to check for performance or accessibility issues.
 
-![Lighthouse results]()
+![Lighthouse results](https://cdn.discordapp.com/attachments/1049024982694498367/1109180293849555035/image.png)
 
-latest test ~
+latest test ~20:05 19.05.2023
 
 * Performance
   * Lighthouse had no suggestions to optimize the performance of my website.
@@ -170,7 +168,7 @@ latest test ~
   * Instead of calling the shuffle function I used the IIFE (Immediately Invoked Function Expression) so that function will be immediately executed.
 
 * On reset the board does not shuffle
-  * This bug is not fixed yet!
+  * In order to fix this bug I needed to remove the IIFE from my shuffle function and instead call shuffle() in my startGame();
 
 # Deployment
 
