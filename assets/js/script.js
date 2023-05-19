@@ -91,7 +91,7 @@ function shuffle() {
         let randomPos = Math.floor(Math.random() * 20);
         card.style.order = randomPos;
     });
-};
+}
 
 //end the game after all pairs are found:
 function endGame() {

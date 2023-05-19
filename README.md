@@ -81,7 +81,7 @@ The wireframe shows designs for phone, iPad/tablet and desktop displays.
 
 ## Validating
 
-After finishing up I used the [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validators to make sure I did not create errors.
+After finishing up I used the [HTML](https://validator.w3.org/), [CSS](https://jigsaw.w3.org/css-validator/) and [JavaScript](https://jshint.com/) validators to make sure I did not create errors.
 
 ### Latest validations
 
@@ -96,6 +96,12 @@ latest test ~20:00 19.05.2023
 ![Image of the latest CSS validation](https://cdn.discordapp.com/attachments/1049024982694498367/1109178660281385100/image.png)
 
 latest test ~20:00 19.05.2023
+
+#### JavaScript
+
+![Image of the latest JavaScript validation](https://cdn.discordapp.com/attachments/1049024982694498367/1109183024077230091/image.png)
+
+latest test ~20:15 19.05.2023
 
 ## Testing User Stories from (UX) Section
 
