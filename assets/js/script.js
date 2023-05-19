@@ -18,8 +18,8 @@ function startGame() {
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
     noFlip = false;
-    startCountdown();
     seconds = 60;
+    startCountdown();
     points = 0;
     counterPoints.textContent = points;
     moves = 0;
@@ -99,7 +99,9 @@ function endGame() {
         stopCountdown();
         currentFunction = resetGame;
         updateActionButtonText("Reset");
-        alert('Congratulations! You scored: ' + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
+        setTimeout(function () {
+            alert('Congratulations! You scored: ' + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
+        }, 500);
     }
 }
 
@@ -114,18 +116,19 @@ function resetGame() {
     counterPoints.textContent = points;
     moves = 0;
     counterMoves.textContent = moves;
-
 }
 
 //timer initialization:
 function startCountdown() {
     countdown = setInterval(function () {
+        seconds--;
         updateTimer();
         if (seconds === 0) {
             stopCountdown();
-            alert("Time's up! You scored: " + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
+            setTimeout(function () {
+                alert("Time's up! You scored: " + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
+            }, 500);
         }
-        seconds--;
     }, 1000);
     isRunning = true;
     updateActionButtonText("RESET");
