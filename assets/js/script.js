@@ -3,6 +3,8 @@ const cards = document.querySelectorAll('.card');
 let hasFlipped = false;
 let noFlip = true;
 let firstCard, secondCard;
+//for timer:
+let seconds, countdown, isRunning = false;
 
 //start the game:
 function startGame() {
@@ -119,4 +121,32 @@ function resetGame() {
     moves = 0;
     counterMoves.textContent = moves;
 
+}
+//timer initialization:
+function startCountdown() {
+    countdown = setInterval(function () {
+        updateTimer();
+        if (seconds === 0) {
+            stopCountdown();
+            alert("Time's up! You scored: " + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
+        }
+        seconds--;
+        console.log('Time left', seconds);
+    }, 1000);
+    //start to reset change text:
+    isRunning = true;
+    updateActionButtonText("Reset");
+}
+
+//stop the timer:
+function stopCountdown() {
+    clearInterval(countdown);
+    isRunning = false;
+    updateActionButtonText("Start");
+}
+
+//update the timer:
+function updateTimer() {
+    let timerElement = document.getElementById("timer");
+    timerElement.innerText = seconds;
 }
