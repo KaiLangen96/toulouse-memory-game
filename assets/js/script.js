@@ -9,7 +9,7 @@ let seconds, countdown, isRunning = false;
 const counterPoints = document.getElementById("points");
 const counterMoves = document.getElementById("moves");
 let points, moves;
-//io-button:
+//for io-button:
 let currentFunction = startGame;
 
 //start the game:
@@ -55,10 +55,8 @@ function matchedCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     continuePlaying();
-    //add one to moves:
     moves++;
     counterMoves.textContent = moves;
-    //add one to score:
     points++;
     counterPoints.textContent = points;
     endGame();
@@ -128,6 +126,7 @@ function resetGame() {
     counterMoves.textContent = moves;
 
 }
+
 //timer initialization:
 function startCountdown() {
     countdown = setInterval(function () {
