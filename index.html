@@ -17,8 +17,22 @@
         <h1>Welcome to Toulouse Memory!</h1>
         <p>This is a memory game with pictures of my cat Toulouse.</p>
     </header>
+    <section id="score-board">
+        <button id="iobutton" onclick="toggleStartReset()">Start</button>
+        <table>
+            <tr>
+                <th>Score:</th>
+                <th>Time:</th>
+                <th>Moves:</th>
+            </tr>
+            <tr>
+                <td id="points">0</td>
+                <td id="timer">60</td>
+                <td id="moves">0</td>
+            </tr>
+        </table>
+    </section>
 
-    
     <script src="assets/js/script.js"></script>
 </body>
 
