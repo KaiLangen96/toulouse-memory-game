@@ -9,6 +9,8 @@
 body {
     height: 100vh;
     background-image: url(../images/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -17,12 +19,12 @@ header {
 }
 
 h1 {
-    font-family: 'Bubblegum Sans';
+    font-family: 'Bubblegum Sans', cursive;
 }
 
 p,
 table {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', serif;
 }
 
 #field {
