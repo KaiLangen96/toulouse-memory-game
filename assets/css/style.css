@@ -56,3 +56,17 @@ header {
 .front {
     transform: rotateY(180deg);
 }
+
+#score-board {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
