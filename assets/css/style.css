@@ -70,7 +70,7 @@ table {
     transform: rotateY(180deg);
 }
 
-#score-board {
+#scoreboard {
     display: flex;
     margin: 10px auto;
     justify-content: center;

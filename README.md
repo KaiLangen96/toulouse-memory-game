@@ -25,7 +25,7 @@ You can find her new website [here](https://kailangen96.github.io/toulouse-memor
 
 ### Imagery
 
-The pictures I used to create the memory game were all taken by [Hanna Kronberg](https://www.linkedin.com/in/hanna-kronberg-534a2b199/).
+The pictures I used to create the memory game were all taken by [Hanna Kronberg](https://www.linkedin.com/in/hanna-kronberg-534a2b199/) or myself.
 
 * The [backface](assets/images/Backface.jpg) for the cards shows his paw print in the snow of winter 2022.
   
@@ -51,7 +51,7 @@ The wireframe shows designs for phone, iPad/tablet and desktop displays.
   * 1201px and more — Extra large screens, TV.
 
 * The game field is locked until the start button is pressed.
-* The score board keeps track of the players score, time remaining and moves.
+* The scoreboard keeps track of the players score, time remaining and moves.
   * The score updates as soon as a pair is flipped.
   * The time counts down 60 seconds.
   * the moves update every time two cards are flipped.
@@ -104,9 +104,9 @@ latest test ~
 * _As a user, I want to be able to understand what the page is about at a first look._
   * The page header describes the purpose of the page immediately. The paragraph below gives a more detailed description.
 * _As a user, I want to be able to track my score and moves._
-  * The score board above the game field will track the score, moves and time.
+  * The scoreboard above the game field will track the score, moves and time.
 * _As a user, I want to be able to challenge myself against the clock._
-  * The timer inside the score board starts counting down 60 seconds to give the game a challenge.
+  * The timer inside the scoreboard starts counting down 60 seconds to give the game a challenge.
 
 ## Further Testing
 
@@ -117,7 +117,7 @@ As another testing method I used the following devices:
 #### Computers
 
 * Custom Build PC 1 (screen resolution 1920x1080)
-  * Google Chrome ( incl. dev. tools)
+  * Google Chrome (incl. dev. tools)
     * iPhone SE
     * iPhone XR
     * iPhone 12 Pro
@@ -145,7 +145,7 @@ As another testing method I used the following devices:
 
 ### Third-Party Testing
 
-As one of the most useful ways to test my website I send it out to many friends and family to try out the game and collect their feedback. This way my website was not only tested on way more browsers but also on a lot of different screen sizes and I managed to gather a couple opinions about the card sizes on smaller screens for example.
+As one of the most useful ways to test my website, I send it out to many friends and family to try out the game and collect their feedback. This way my website was not only tested on way more browsers but also on a lot of different screen sizes and I managed to gather a couple opinions about the card sizes on smaller screens for example.
 
 ### Lighthouse
 
@@ -166,8 +166,8 @@ latest test ~
 
 ## Bugs & Fixes
 
-* The board loaded unshuffled.
-  * Instead of calling the function I used the IIFE (Immediately Invoked Function Expression) so that funcion will be immediately executed.
+* The board loaded sorted.
+  * Instead of calling the shuffle function I used the IIFE (Immediately Invoked Function Expression) so that function will be immediately executed.
 
 * On reset the board does not shuffle
   * This bug is not fixed yet!
@@ -194,7 +194,7 @@ latest test ~
 ## Media
 
 * The pictures were all taken and edited by Hanna Kronberg.
-* The model of the pictures is mostly Toulouse but in one picuture we have our second cat, Caruso.
+* The model of the pictures is mostly Toulouse but in one picture we have our second cat, Caruso.
 
 ## Special Thanks
 
@@ -206,4 +206,4 @@ latest test ~
 
 [Coolors](https://coolors.co/636c87-657d5f-9cb097-b2c9ac-f4fcf2), helping me to create the color template used in [Color Scheme](#color-scheme).
 
-[Antonio Rodríguez](https://www.linkedin.com/in/antonio-rodr%C3%ADguez-bb9b99b7/), as my mentor. Once again he helped me a lot getting started with the memory game and laying out a plan.
+[Antonio Rodríguez](https://www.linkedin.com/in/antonio-rodr%C3%ADguez-bb9b99b7/), as my mentor. Once again, he helped me a lot getting started with the memory game and laying out a plan.
