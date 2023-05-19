@@ -15,6 +15,7 @@ document.getElementById("iobutton").addEventListener('click', toggleStartReset);
 
 //start the game:
 function startGame() {
+    shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
     noFlip = false;
     startCountdown();
@@ -85,12 +86,12 @@ function resetBoard() {
 }
 
 //shuffle the board:
-(function shuffle() {
+function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 20);
         card.style.order = randomPos;
     });
-})();
+};
 
 //end the game after all pairs are found:
 function endGame() {
@@ -104,7 +105,6 @@ function endGame() {
 
 //reset the game:
 function resetGame() {
-    //    shuffle();
     stopCountdown();
     resetBoard();
     seconds = 60;
