@@ -70,3 +70,13 @@ td {
     border-collapse: collapse;
     padding: 5px;
 }
+
+style button: button {
+    display: flex;
+    border-radius: 50%;
+    background-color: green;
+}
+
+button:hover {
+    background-color: red;
+}
