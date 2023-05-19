@@ -9,7 +9,6 @@
 body {
     height: 100vh;
     background-image: url(../images/Background.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -20,6 +19,8 @@ header {
 
 h1 {
     font-family: 'Bubblegum Sans', cursive;
+    font-size: 400%;
+    letter-spacing: 1px;
 }
 
 p,
@@ -76,6 +77,10 @@ table {
     justify-content: center;
 }
 
+table {
+    margin: 0 -96px;
+}
+
 table,
 th,
 td {
@@ -84,14 +89,42 @@ td {
     padding: 5px;
 }
 
-button {
-    display: flex;
-    border-radius: 50%;
-    background-color: green;
+p,
+table {
+    font-size: 100%;
+    letter-spacing: 1px;
 }
 
-button:hover {
-    background-color: red;
+button {
+    background-color: #E9AB37;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 263px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Bubblegum Sans';
+    letter-spacing: 1px;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+button:hover:before {
+    top: 0;
+    left: 0;
 }
 
 /*responsive layout
@@ -114,9 +147,13 @@ phone screen layout*/
         height: 310px;
     }
 
+    table {
+        margin: 0;
+    }
+
     button {
-        padding: 20px;
-        margin: 0 50px;
+        margin-left: 0;
+        margin-right: 90px;
     }
 
     .card {
@@ -148,8 +185,7 @@ phone screen layout*/
     }
 
     button {
-        padding: 20px;
-        margin: 0 110px;
+        margin: 0 106px;
     }
 }
 
@@ -172,60 +208,7 @@ phone screen layout*/
         height: 730px;
     }
 
-    table {
-        margin: 0 -85px;
-    }
-
     button {
-        padding: 20px;
-        margin: 0 232px;
-    }
-}
-
-/*desktop screen layout*/
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
-    h1 {
-        font-size: 400%;
-        letter-spacing: 1px;
-    }
-
-    p,
-    table {
-        font-size: 100%;
-        letter-spacing: 1px;
-    }
-
-    table {
-        margin: 0 -88px;
-    }
-
-    button {
-        padding: 20px;
-        margin: 0 268px;
-    }
-}
-
-/*tv screen layout*/
-@media screen and (min-width: 1201px) {
-
-    h1 {
-        font-size: 400%;
-        letter-spacing: 1px;
-    }
-
-    p,
-    table {
-        font-size: 100%;
-        letter-spacing: 1px;
-    }
-
-    table {
-        margin: 0 -88px;
-    }
-
-    button {
-        padding: 20px;
-        margin: 0 268px;
+        margin: 0 228px;
     }
 }
