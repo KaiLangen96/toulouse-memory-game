@@ -4,7 +4,7 @@ This is a website with a memory game themed by one of my cats, Toulouse. I hope 
 
 You can find her new website [here](https://kailangen96.github.io/toulouse-memory-game/).
 
-![Mock up of her website on different screens](https://cdn.discordapp.com/attachments/1049024982694498367/1109094845206765688/image.png)
+![Mock up of her website on different screens]()
 
 # User Experience (UX)
 
