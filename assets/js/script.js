@@ -11,6 +11,7 @@ const counterMoves = document.getElementById("moves");
 let points, moves;
 //for io-button:
 let currentFunction = startGame;
+document.getElementById("iobutton").addEventListener('click', toggleStartReset);
 
 //start the game:
 function startGame() {
@@ -126,16 +127,15 @@ function startCountdown() {
         }
         seconds--;
     }, 1000);
-    //start to reset change text:
     isRunning = true;
-    updateActionButtonText("Reset");
+    updateActionButtonText("RESET");
 }
 
 //stop the timer:
 function stopCountdown() {
     clearInterval(countdown);
     isRunning = false;
-    updateActionButtonText("Start");
+    updateActionButtonText("START");
 }
 
 //update the timer:

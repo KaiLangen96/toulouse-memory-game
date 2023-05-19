@@ -106,7 +106,7 @@ button {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    font-family: 'Bubblegum Sans';
+    font-family: 'Bubblegum Sans', cursive;
     letter-spacing: 1px;
 }
 
