@@ -2,7 +2,7 @@
 
 This is a website with a memory game themed by one of my cats, Toulouse. I hope you enjoy playing it!
 
-You can find her new website [here](https://kailangen96.github.io/toulouse-memory-game/).
+You can find the website [here](https://kailangen96.github.io/toulouse-memory-game/).
 
 ![Mock up of her website on different screens](https://cdn.discordapp.com/attachments/1049024982694498367/1109178879056298135/image.png)
 
