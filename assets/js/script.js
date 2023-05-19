@@ -77,3 +77,46 @@ function continuePlaying() {
     firstCard = null;
     secondCard = null;
 }
+
+//reset the board:
+function resetBoard() {
+    console.log('The board as been reset');
+    cards.forEach(card => {
+        card.classList.remove('flip');
+    });
+}
+
+//shuffle the board:
+(function shuffle() {
+    console.log('The cards have been shuffled');
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 20);
+        card.style.order = randomPos;
+    });
+})();
+
+//end the game after all pairs are found:
+function endGame() {
+    if (points === 10) {
+        stopCountdown();
+        currentFunction = resetGame;
+        updateActionButtonText("Reset");
+        alert('Congratulations! You scored: ' + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
+    }
+}
+
+//reset the game:
+function resetGame() {
+    console.log('The game has been reset');
+    //    shuffle();
+    stopCountdown();
+    resetBoard();
+    seconds = 60;
+    updateTimer();
+    noFlip = true;
+    points = 0;
+    counterPoints.textContent = points;
+    moves = 0;
+    counterMoves.textContent = moves;
+
+}
