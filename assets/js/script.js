@@ -22,9 +22,6 @@ function startGame() {
     counterPoints.textContent = points;
     moves = 0;
     counterMoves.textContent = moves;
-    console.log('Game has started');
-    console.log('Score', points);
-    console.log('Moves', moves);
 }
 
 //flip cards:
@@ -38,20 +35,17 @@ function flipCard() {
         return;
     }
     secondCard = this;
-    console.log('Two card has been flipped');
     checkMatch();
 }
 
 //check if cards match:
 function checkMatch() {
-    console.log('A check has been performed');
     let match = firstCard.dataset.card === secondCard.dataset.card;
     match ? matchedCards() : resetCards();
 }
 
 //if matched:
 function matchedCards() {
-    console.log('It is a match');
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     continuePlaying();
@@ -64,7 +58,6 @@ function matchedCards() {
 
 //if not a match:
 function resetCards() {
-    console.log('It is not a match');
     noFlip = true;
     setTimeout(() => {
         firstCard.classList.remove('flip');
@@ -77,7 +70,6 @@ function resetCards() {
 
 //contine the game:
 function continuePlaying() {
-    console.log('The game continues');
     hasFlipped = false;
     noFlip = false;
     firstCard = null;
@@ -86,7 +78,6 @@ function continuePlaying() {
 
 //reset the board:
 function resetBoard() {
-    console.log('The board as been reset');
     cards.forEach(card => {
         card.classList.remove('flip');
     });
@@ -94,7 +85,6 @@ function resetBoard() {
 
 //shuffle the board:
 (function shuffle() {
-    console.log('The cards have been shuffled');
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 20);
         card.style.order = randomPos;
@@ -113,7 +103,6 @@ function endGame() {
 
 //reset the game:
 function resetGame() {
-    console.log('The game has been reset');
     //    shuffle();
     stopCountdown();
     resetBoard();
@@ -136,7 +125,6 @@ function startCountdown() {
             alert("Time's up! You scored: " + points + ' points with ' + moves + ' moves in ' + (60 - seconds) + ' seconds!');
         }
         seconds--;
-        console.log('Time left', seconds);
     }, 1000);
     //start to reset change text:
     isRunning = true;
