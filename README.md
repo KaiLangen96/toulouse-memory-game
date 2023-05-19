@@ -59,6 +59,7 @@ The wireframe shows designs for phone, iPad/tablet and desktop displays.
 
 * Add the possibility of starting the game by clicking a card.
 * Add different difficulties.
+* Add a scoreboard to track highscores.
 
 # Technologies Used
 
